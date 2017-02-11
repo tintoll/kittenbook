@@ -20,6 +20,10 @@ module.exports = function(grunt){
         },
         jshint : {
             files : ['js/values.js', 'js/prompt.js']
+        },
+        watch : {
+            files : ['<%= jshint.files %>','manifest.json'],
+            tasks : ['default']
         }
 
     });
@@ -28,6 +32,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch'); //파일이 변경될때마다 패키징하도록 설정하는 부분 
 
     //작업을 등록한다
     grunt.registerTask('default',['jshint','concat','copy']);
