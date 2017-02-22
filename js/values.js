@@ -7,4 +7,11 @@ var currentTime =   currentDate.getFullYear() + '-' +
                     currentDate.getHours() + ':'+
                     currentDate.getMinutes() + ':' +
                     currentDate.getSeconds();
-
+var areaCodes = {
+    '408' : 'Silicon Valley',
+    '702' : 'Las Vegas',
+    '801' : 'Northern Utah',
+    '765' : 'West Lafayette',
+    '901' : 'Memphis',
+    '507' : 'Rochester,MN',
+}
