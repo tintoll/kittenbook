@@ -1,5 +1,8 @@
 var userName = prompt('Hello, what\'s your name?');
 
+if(!userName) {
+    userName = prompt('You didn\'t enter a name, what\'s your name?');
+}
 var phoneNumber = prompt('Hello '+ userName +', What\'s your phone number?');
 var phoneNumberPattern = /1?-?\(?([0-9]{3})[\-\)][0-9]{3}-[0-9]{4}/;
 
